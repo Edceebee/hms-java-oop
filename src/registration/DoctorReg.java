@@ -3,14 +3,19 @@ package registration;
 public class DoctorReg extends Registration{
     private String department;
     private String specialization;
+    private final String userType = "Doctor";
 
-    public DoctorReg(String userId, String firstName, String lastName, String userType, String department, String specialization) {
-        super(userId, firstName, lastName, userType);
+    public DoctorReg(String userId, String firstName, String lastName,String department, String specialization) {
+        super(userId, firstName, lastName);
         this.department = department;
         this.specialization = specialization;
     }
 
     public DoctorReg(){}
+
+    public String getUserType(){
+        return userType;
+    }
 
     public String getDepartment() {
         return department;

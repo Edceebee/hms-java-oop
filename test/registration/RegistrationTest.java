@@ -18,7 +18,7 @@ class RegistrationTest {
 
     @Test
     void testRegistrationConstructor(){
-        Registration user = new Registration("1","Amaka", "Mbah","Doctor");
+        Registration user = new Registration("1","Amaka", "Mbah");
         assertNotNull(user);
     }
 }
