@@ -7,4 +7,16 @@ public class PatientReg extends Registration{
         super(userId, firstName, lastName);
         this.patientDisease = disease;
     }
+    public PatientReg(){
+
+    }
+
+    public String getPatientDisease() {
+        return patientDisease;
+    }
+
+    public void setPatientDisease(String patientDisease) {
+        this.patientDisease = patientDisease;
+    }
+
 }
