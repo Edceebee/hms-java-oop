@@ -1,4 +1,5 @@
-package com.hms.appointment;
+package appointment;
 
 public class Appointment {
+
 }
