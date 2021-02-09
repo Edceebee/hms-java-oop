@@ -11,7 +11,7 @@ class DoctorRegTest {
     @Test
     void testForDoctorConstructor(){
         //given that
-        DoctorReg newDoctor = new DoctorReg("12", "Star boy", "OG way", "anatomy", "cardiology");
+        DoctorReg newDoctor = new DoctorReg("12", "Star boy", "OG way","Doctor", "anatomy", "cardiology");
         assertNotNull(newDoctor);
     }
     @Test
