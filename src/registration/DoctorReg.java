@@ -1,12 +1,14 @@
 package registration;
 
+import java.time.LocalTime;
+
 public class DoctorReg extends Registration{
     private String department;
     private String specialization;
     private final String userType = "Doctor";
 
-    public DoctorReg(String userId, String firstName, String lastName, Date regDate, Date birthDate, String department, String specialization) {
-        super(userId, firstName, lastName, regDate, birthDate);
+    public DoctorReg(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime, String department, String specialization) {
+        super(userId, firstName, lastName, regDate, birthDate, regTime);
         this.department = department;
         this.specialization = specialization;
     }

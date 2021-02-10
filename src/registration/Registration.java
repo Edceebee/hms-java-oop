@@ -1,27 +1,32 @@
 package registration;
 
+import java.time.LocalTime;
+
+// change te class to abstract later
 public class Registration {
-    private String userId;
+    private int userId;
     private String firstName;
     private String lastName;
     private Date regDate;
     private Date birthDate;
+    private LocalTime regTime;
 
     public Registration(){}
 
-    public Registration(String userId, String firstName, String lastName, Date regDate, Date birthDate) {
+    public Registration(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.regDate = regDate;
         this.birthDate = birthDate;
+        this.regTime = regTime;
     }
 
-    public void setUserId(String userId){
-        this.userId = userId;
+    public void setUserId(int userId){
+        this.userId = userId++;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
