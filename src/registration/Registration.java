@@ -2,8 +2,11 @@ package registration;
 
 import java.time.LocalTime;
 
+
 // change te class to abstract later
 public class Registration {
+
+
     private int userId;
     private String firstName;
     private String lastName;
@@ -45,4 +48,14 @@ public class Registration {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+//    public Date BirthDate(Date birthDate) {
+//        this.birthDate = birthDate;
+//        return birthDate;
+//    }
+
+//    public Date RegDate(Date regDate) {
+//        this.regDate = regDate;
+//        return regDate;
+//    }
 }
