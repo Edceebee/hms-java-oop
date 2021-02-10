@@ -4,8 +4,8 @@ public class PatientReg extends Registration{
     private String patientDisease;
     private final String userType = "Patient";
 
-    public PatientReg(String userId, String firstName, String lastName, String disease) {
-        super(userId, firstName, lastName);
+    public PatientReg(String userId, String firstName, String lastName, Date regDate, Date birthDate, String disease) {
+        super(userId, firstName, lastName, regDate, birthDate);
         this.patientDisease = disease;
     }
 

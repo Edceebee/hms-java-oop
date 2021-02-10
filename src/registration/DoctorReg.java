@@ -5,8 +5,8 @@ public class DoctorReg extends Registration{
     private String specialization;
     private final String userType = "Doctor";
 
-    public DoctorReg(String userId, String firstName, String lastName,String department, String specialization) {
-        super(userId, firstName, lastName);
+    public DoctorReg(String userId, String firstName, String lastName, Date regDate, Date birthDate, String department, String specialization) {
+        super(userId, firstName, lastName, regDate, birthDate);
         this.department = department;
         this.specialization = specialization;
     }

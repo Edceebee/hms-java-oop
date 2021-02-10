@@ -7,7 +7,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class PatientRegTest {
     @Test
     void testForPatientConstructor() {
-        PatientReg patient = new PatientReg("1", "Jane", "Mama", "Bronchitis");
+        Date regDate = new Date(3,5,1903);
+        Date birthDate = new Date(4,1,2012);
+        PatientReg patient = new PatientReg("1", "Jane", "Mama", regDate, birthDate,"Bronchitis");
         assertNotNull(patient);
     }
 

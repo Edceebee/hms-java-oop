@@ -10,8 +10,9 @@ class DoctorRegTest {
 
     @Test
     void testForDoctorConstructor(){
-        //given that
-        DoctorReg newDoctor = new DoctorReg("12", "Star boy", "OG way", "anatomy", "cardiology");
+        Date regDate = new Date(3,5,1999);
+        Date birthDate = new Date(4,3,2012);
+        DoctorReg newDoctor = new DoctorReg("12", "Star boy", "OG way", regDate, birthDate,"anatomy", "cardiology");
         assertNotNull(newDoctor);
     }
     @Test
