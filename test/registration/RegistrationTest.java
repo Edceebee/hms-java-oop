@@ -11,11 +11,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class RegistrationTest {
 
     @Test
-    void testRegistrationConstructor(){
-        Date regDate = new Date(3,5,1985);
+    void testDateConstructor(){
+        Date newDate = new Date(3,5,1985);
         Date birthDate = new Date(4,3,2012);
         LocalTime regTime = LocalTime.now();
-        Registration user = new Registration(1,"Amaka", "Mbah", regDate, birthDate, regTime);
+        Registration user = new Registration(1,"Amaka", "Mbah", newDate, birthDate, regTime);
         assertNotNull(user);
     }
 
@@ -132,5 +132,6 @@ class RegistrationTest {
         newPatient.setPatientDisease("Tbs");
         assertEquals("Tbs", newPatient.getPatientDisease());
     }
+
 
 }

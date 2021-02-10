@@ -3,12 +3,12 @@ package registration;
 import java.time.LocalTime;
 
 public class PatientReg extends Registration{
-    private String patientDisease;
+    private String purpose;
     private final String userType = "Patient";
 
     public PatientReg(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime, String disease) {
         super(userId, firstName, lastName, regDate, birthDate, regTime);
-        this.patientDisease = disease;
+        this.purpose = disease;
     }
 
     public PatientReg(){
@@ -20,11 +20,11 @@ public class PatientReg extends Registration{
     }
 
     public String getPatientDisease() {
-        return patientDisease;
+        return purpose;
     }
 
     public void setPatientDisease(String patientDisease) {
-        this.patientDisease = patientDisease;
+        this.purpose = patientDisease;
     }
 
 }
