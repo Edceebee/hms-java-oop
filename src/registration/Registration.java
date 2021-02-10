@@ -10,22 +10,23 @@ public class Registration {
     private int userId;
     private String firstName;
     private String lastName;
-    private Date regDate;
     private Date birthDate;
-    private LocalTime regTime;
+    private String email;
+
 
     public Registration(){}
 
-    public Registration(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime) {
+    public Registration(int userId, String firstName, String lastName, Date birthDate, String email) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.regDate = regDate;
         this.birthDate = birthDate;
-        this.regTime = regTime;
+        this.email = email;
+
     }
 
     public void setUserId(int userId){
+
         this.userId = userId++;
     }
 
@@ -49,7 +50,23 @@ public class Registration {
         this.lastName = lastName;
     }
 
-//    public Date BirthDate(Date birthDate) {
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    //    public Date BirthDate(Date birthDate) {
 //        this.birthDate = birthDate;
 //        return birthDate;
 //    }

@@ -6,8 +6,8 @@ public class PatientReg extends Registration{
     private String purpose;
     private final String userType = "Patient";
 
-    public PatientReg(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime, String disease) {
-        super(userId, firstName, lastName, regDate, birthDate, regTime);
+    public PatientReg(int userId, String firstName, String lastName, Date birthDate, String email, String disease) {
+        super(userId, firstName, lastName, birthDate, email);
         this.purpose = disease;
     }
 

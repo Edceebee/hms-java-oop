@@ -15,7 +15,7 @@ class RegistrationTest {
         Date newDate = new Date(3,5,1985);
         Date birthDate = new Date(4,3,2012);
         LocalTime regTime = LocalTime.now();
-        Registration user = new Registration(1,"Amaka", "Mbah", newDate, birthDate, regTime);
+        Registration user = new Registration(1,"Amaka", "Mbah", newDate,"@gmail");
         assertNotNull(user);
     }
 
@@ -56,8 +56,8 @@ class RegistrationTest {
     void testForDoctorConstructor(){
         Date regDate = new Date(3,5,1999);
         Date birthDate = new Date(4,3,2012);
-        LocalTime regTime = LocalTime.now();
-        DoctorReg newDoctor = new DoctorReg(12, "Star boy", "OG way", regDate, birthDate,regTime,"anatomy", "cardiology");
+       // LocalTime regTime = LocalTime.now();
+        DoctorReg newDoctor = new DoctorReg(12, "Star boy", "OG way", birthDate,"@gmail.com","anatomy", "cardiology");
         assertNotNull(newDoctor);
     }
 
@@ -103,8 +103,7 @@ class RegistrationTest {
     void testForPatientConstructor() {
         Date regDate = new Date(3,5,1903);
         Date birthDate = new Date(4,1,2012);
-        LocalTime regTime = LocalTime.now();
-        PatientReg patient = new PatientReg(1, "Jane", "Mama", regDate, birthDate,regTime,"Bronchitis");
+        PatientReg patient = new PatientReg(1, "Jane", "Mama", birthDate, "80452273", "Bronchitis");
         assertNotNull(patient);
     }
 

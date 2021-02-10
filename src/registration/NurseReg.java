@@ -8,8 +8,8 @@ public class NurseReg extends Registration {
     private String specialization;
     private final String userType = "Nurse";
 
-    public NurseReg(int userId, String firstName, String lastName, Date regDate, Date birthDate, LocalTime regTime, String department, String specialization) {
-        super(userId, firstName, lastName, regDate, birthDate, regTime);
+    public NurseReg(int userId, String firstName, String lastName, Date birthDate, String email, String department, String specialization) {
+        super(userId, firstName, lastName, birthDate, email);
         this.department = department;
         this.specialization = specialization;
     }
