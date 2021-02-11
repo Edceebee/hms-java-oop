@@ -31,4 +31,5 @@ public class DoctorReg extends Registration{
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
     }
+
 }

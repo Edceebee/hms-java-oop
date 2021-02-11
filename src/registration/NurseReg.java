@@ -16,9 +16,6 @@ public class NurseReg extends Registration {
 
     public NurseReg(){}
 
-    public String getUserType(){
-        return userType;
-    }
 
     public String getDepartment() {
         return department;
