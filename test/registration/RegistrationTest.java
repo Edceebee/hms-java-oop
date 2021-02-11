@@ -62,26 +62,36 @@ class RegistrationTest {
     }
 
     @Test
-    void testForDoctorNoArgConstructor(){
+    void testForRegistrationNoArgConstructor(){
         DoctorReg newDoctor = new DoctorReg();
         assertNotNull(newDoctor);
     }
 
     @Test
     void testDoctorIdCanBeUpdated(){
-        DoctorReg doctor = new DoctorReg();
-        doctor.setUserId(1);
-        assertEquals(1, doctor.getUserId());
+        Registration newRegistration = new Registration();
+        newRegistration.setUserId(1);
+        assertEquals(1, newRegistration.getUserId());
     }
 
     @Test
-    void testDoctorNamesCanBeUpdated(){
-        DoctorReg doctor = new DoctorReg();
-        doctor.setFirstName("Amaka");
-        assertEquals("Amaka", doctor.getFirstName());
+    void testRegistrationFirstNamesCanBeUpdated(){
+        Registration newRegistration = new Registration();
+        newRegistration.setFirstName("Amaka");
+        assertEquals("Amaka", newRegistration.getFirstName());
 
-        doctor.setLastName("Bae");
-        assertEquals("Bae", doctor.getLastName());
+    }
+    @Test
+    void testThatRegistrationLastNameCanBeUpdated(){
+        Registration newRegistration = new Registration();
+        newRegistration.setLastName("Mbah");
+        assertEquals("Mbah", newRegistration.getLastName());
+    }
+    @Test
+    void testRegistrationEmailCanBeUpdated(){
+        Registration newRegistration = new Registration();
+        newRegistration.setEmail("@gmail.com");
+        assertEquals("@gmail.com", newRegistration.getEmail());
     }
 
     @Test
@@ -113,23 +123,36 @@ class RegistrationTest {
         newPatient.setUserId(123);
         assertEquals(123, newPatient.getUserId());
     }
-    @Test
-    void testPatientFirstNameCanBeUpdated() {
-        PatientReg newPatient = new PatientReg();
-        newPatient.setFirstName("Star boy");
-        assertEquals("Star boy", newPatient.getFirstName());
-    }
-    @Test
-    void testPatientLastNameCanBeUpdated() {
-        PatientReg newPatient = new PatientReg();
-        newPatient.setLastName("OG way");
-        assertEquals("OG way", newPatient.getLastName());
-    }
+//    @Test
+//    void testPatientFirstNameCanBeUpdated() {
+//        PatientReg newPatient = new PatientReg();
+//        newPatient.setFirstName("Star boy");
+//        assertEquals("Star boy", newPatient.getFirstName());
+//    }
+//    @Test
+//    void testPatientLastNameCanBeUpdated() {
+//        PatientReg newPatient = new PatientReg();
+//        newPatient.setLastName("OG way");
+//        assertEquals("OG way", newPatient.getLastName());
+//    }
     @Test
     void testPatientDiseaseCanBeUpdated() {
         PatientReg newPatient = new PatientReg();
-        newPatient.setPatientDisease("Tbs");
-        assertEquals("Tbs", newPatient.getPatientDisease());
+        newPatient.setPurpose("Medical check up");
+        assertEquals("Medical check up", newPatient.getPurpose());
+    }
+
+    @Test
+    void testThatNurseDepartmentCanBeUpdated(){
+        NurseReg newNurse = new NurseReg();
+        newNurse.setDepartment("Cardiology");
+        assertEquals("Cardiology", newNurse.getDepartment());
+    }
+    @Test
+    void testNurseSpecializationCanBeUpdated(){
+        DoctorReg doctor = new DoctorReg();
+        doctor.setSpecialization("Surgeon");
+        assertEquals("Surgeon", doctor.getSpecialization());
     }
 
 

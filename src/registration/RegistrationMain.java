@@ -100,7 +100,33 @@ public class RegistrationMain {
             System.out.println("Thanks for your time, we'll get in touch with you....");
 
         }
+        if (number == 3){
+            PatientReg newPatient = new PatientReg();
 
+            System.out.println("Thank you for your interest in registering to be a registered patient");
+            System.out.println("kindly fill in the form below to register to be a patient \n Enter your first name");
+            newPatient.setFirstName(input.next());
+
+            System.out.println("Enter your last name");
+            newPatient.setLastName(input.next());
+
+//            System.out.println("Enter your date of birth");
+//            newDoctor.setBirthDate(input.next());
+
+            System.out.println("Enter your email address");
+            newPatient.setEmail(input.next());
+
+            System.out.println("Enter purpose for registration");
+            newPatient.setPurpose(input.next());
+
+            System.out.println("thank you for registering with us \nHere are your details below:");
+            System.out.println("\nFull name is: " + newPatient.getFirstName() + "  " + newPatient.getLastName());
+            System.out.println("Email address is: " + newPatient.getEmail() );
+            System.out.println("The reason for registration is: " + newPatient.getPurpose());
+
+            System.out.println();
+            System.out.println("Thanks for your time, one of our doctors will get in touch with you....");
+        }
 
 
     }
